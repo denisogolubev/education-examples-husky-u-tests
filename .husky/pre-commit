@@ -4,6 +4,7 @@
 echo "*** Pre-commit hook is started ***"
 
 echo "*** Run lint ***"
-
+npm run lint
 
 echo "*** Run test ***"
+npm run test
