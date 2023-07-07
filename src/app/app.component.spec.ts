@@ -58,7 +58,7 @@ describe('AppComponent', () => {
 
   it('should check timer in ngOnInit', fakeAsync(() => {
     component.ngOnInit();
-    tick(31000);
+    tick(10000);
     expect(component.title)
       .withContext('Title should be changed after 10 secs')
       .not

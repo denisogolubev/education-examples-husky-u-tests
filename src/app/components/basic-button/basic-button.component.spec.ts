@@ -43,7 +43,7 @@ describe('BasicButtonComponent', () => {
         .toEqual('');
     });
 
-    it('should check that button has default text', () => {
+    it('should check that button has specified text', () => {
       const mockText: string = 'Submit';
       component.text = mockText;
       cdr.detectChanges();

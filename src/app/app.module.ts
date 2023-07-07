@@ -11,12 +11,14 @@ import {MatIconModule} from '@angular/material/icon';
 import {BasicButtonComponent} from './components/basic-button/basic-button.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { Test123Component } from './components/test123/test123.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BasicInputComponent,
-    BasicButtonComponent
+    BasicButtonComponent,
+    Test123Component
   ],
   imports: [
     CommonModule,

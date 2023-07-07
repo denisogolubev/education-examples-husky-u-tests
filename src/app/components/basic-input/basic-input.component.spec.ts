@@ -34,7 +34,7 @@ describe('BasicInputComponent', () => {
     const mockValue: string = 'Hello my friends';
     const inputEl: DebugElement = getDebugElement('#basic-input');
     // debugger
-    inputEl.nativeElement.value = 'Hello my friends';
+    inputEl.nativeElement.value = mockValue;
     inputEl.nativeElement.dispatchEvent(new Event('input'));
     fixture.detectChanges();
     // debugger
