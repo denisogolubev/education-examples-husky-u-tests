@@ -1,0 +1,15 @@
+.card-view {
+  width: 30%;
+  margin: 20px auto;
+
+  .card-content {
+    .basic-form {
+      display: flex;
+      flex-direction: column;
+
+      &__button {
+        align-self: flex-end;
+      }
+    }
+  }
+}

@@ -16,7 +16,7 @@
   "plugins": [
     "@typescript-eslint"
   ],
-  "ignorePatterns": ["main.ts", "karma.conf.js"],
+  "ignorePatterns": ["main.ts", "karma.conf.js", "*.html", "*.scss", "*.js"],
   "rules": {
 //    "indent": [
 //      "error",
