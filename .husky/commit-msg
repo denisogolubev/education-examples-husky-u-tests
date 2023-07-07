@@ -9,6 +9,7 @@ if ! [[ $message =~ $requiredPattern ]];
 then
   echo "-"
   echo "-"
+  echo "-"
   echo "🚨 Wrong commit message! 😕"
   echo "The commit message must have this format:"
   echo "<verb in imperative mood>: <what was done>"
