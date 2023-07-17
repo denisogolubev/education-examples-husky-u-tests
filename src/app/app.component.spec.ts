@@ -10,6 +10,9 @@ import {HttpClientTestingModule} from '@angular/common/http/testing';
 import {BasicInputComponent} from './components/basic-input/basic-input.component';
 import {BasicButtonComponent} from './components/basic-button/basic-button.component';
 import {HttpService} from './core/services/http/http.service';
+import {DefaultDateFormatPipe} from './core/pipes/default-date-format/default-date-format.pipe';
+import {DatePipe} from '@angular/common';
+import {Test123Component} from './components/test123/test123.component';
 
 describe('AppComponent', () => {
   let component: AppComponent;
@@ -23,7 +26,9 @@ describe('AppComponent', () => {
         declarations: [
           AppComponent,
           BasicInputComponent,
-          BasicButtonComponent
+          BasicButtonComponent,
+          DefaultDateFormatPipe,
+          Test123Component
         ],
         imports: [
           NoopAnimationsModule,
@@ -33,6 +38,9 @@ describe('AppComponent', () => {
           MatIconModule,
           ReactiveFormsModule,
           HttpClientTestingModule
+        ],
+        providers: [
+          DatePipe
         ]
       }
     );
@@ -49,7 +57,7 @@ describe('AppComponent', () => {
 
   // it('should create', () => {
   //   component.ngOnInit();
-  //   // tick(10000);
+  //   tick(10000);
   //   expect(component.title)
   //     .withContext('Title should be changed after 10 secs')
   //     .not

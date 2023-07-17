@@ -18,6 +18,7 @@ export class AppComponent implements OnInit {
     name: this.nameFormControl,
     lastname: this.lastnameFormControl
   });
+  public now: Date = new Date();
 
   constructor(
     private fb: FormBuilder,
